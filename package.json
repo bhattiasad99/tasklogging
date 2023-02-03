@@ -1,0 +1,31 @@
+{
+  "name": "task_logging",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "APIs to log specific information into our servers",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WitbitLab/task_logging.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WitbitLab/task_logging/issues"
+  },
+  "homepage": "https://github.com/WitbitLab/task_logging#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "chalk": "^5.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "mongoose": "^6.8.4",
+    "morgan": "^1.10.0"
+  }
+}
