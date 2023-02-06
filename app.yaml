@@ -1,0 +1,27 @@
+runtime: nodejs
+env: flex
+
+# Replace [PROJECT_ID] with your project ID
+# service: witbit-task-logging
+
+# Replace [APP_VERSION] with your desired app version
+# version: 1
+
+# Replace [YOUR_REGION] with your desired region (e.g. us-central)
+instance_class: F1
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
+
+# env_variables:
+#   NODE_ENV: production
+#   PORT: 8080
+
+# Replace [YOUR_MAIN_JS_FILE] with the name of your main app JavaScript file
+entrypoint: node server.js
+
+# Replace [YOUR_APP_DIR] with the path to your app directory
+# In this example, the app directory is the current directory (.)
+handlers:
+  - url: /.*
+    script: ./server.js

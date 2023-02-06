@@ -1,11 +1,12 @@
 {
   "name": "task_logging",
-  "type": "module",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "APIs to log specific information into our servers",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "firebase": "^9.17.0",
+    "firebase-admin": "^11.5.0",
     "helmet": "^6.0.1",
     "mongoose": "^6.8.4",
     "morgan": "^1.10.0"
