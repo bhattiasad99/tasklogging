@@ -5,5 +5,5 @@ module.exports = function (app) {
     });
   });
 
-  app.use("/api/logger", require("./logger.routes"));
+  app.use("/api/", require("./logger.routes"));
 };
