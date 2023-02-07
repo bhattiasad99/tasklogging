@@ -22,10 +22,8 @@ module.exports = {
       );
       db.on("error", (e) => console.log(chalk.bgRed("ERROR"), chalk.red(e)));
     } catch (error) {
-
-      console.log('error in connecting to db', error);
-      process.exit(1)
+      console.log("error in connecting to db", error);
+      process.exit(1);
     }
-
-  }
-}
+  },
+};

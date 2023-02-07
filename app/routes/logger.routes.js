@@ -1,10 +1,6 @@
 const router = require("express").Router();
-const {test} = require("../controllers/logger")
+const { test } = require("../controllers/logger");
 
-
-
-router.get("/",test)
-
-
+router.get("/", test);
 
 module.exports = router;
